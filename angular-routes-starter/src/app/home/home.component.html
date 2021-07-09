@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <h4>Welcome to Server Manager 4.0</h4>
+    <p>Manage your Servers and Users.</p>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="d-flex align-items-center justify-content-start">
+                <button class="btn btn-primary me-2" (click)="gotoServers()">Go to Servers</button>
+                <button class="btn btn-primary" (click)="gotoServersWithId(1)">Go to Servers With ID</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-3">
+            <div class="d-flex align-items-center justify-content-start">
+                <button class="btn btn-primary me-2" (click)="login()">Login</button>
+                <button class="btn btn-danger" (click)="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+label {
+  margin-top: 1em;
+}
+
+button,
+.hobby {
+  margin-top: 0.5em;
+}
+
+input.ng-invalid.ng-touched {
+  border: 0.15em solid red;
+}
+
+.error-text {
+  color: red;
+}

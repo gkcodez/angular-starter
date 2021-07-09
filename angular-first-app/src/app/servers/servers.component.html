@@ -1,0 +1,30 @@
+<!-- <label for="serverNameInput">Server Name</label>
+<input type="text" class="form-control" id="serverNameInput" 
+(input)="onServerNameChange($event)"> -->
+
+<!-- <label for="serverNameInput2">Server Name (Two Way Data Binding)</label>
+<input type="text" class="form-control" id="serverNameInput2" [(ngModel)]="serverName" (input)= "onServerNameChange($event)">
+<p>{{ serverName }}</p>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreation()">Add Server</button>
+<p *ngIf="isValidServer; else noServer">{{ serverStatusText }}</p>
+<ng-template #noServer>
+    <p>No Server was created yet!</p>
+</ng-template> -->
+<!-- 
+<label for="username">UserName</label>
+<input type="text" class="form-control" id="username" [(ngModel)]="username" (input)="onUserNameChange($event)">
+<p>{{username}}</p>
+<button class="btn btn-primary" id="addUserBtn" [disabled]="!isValidUserName" (click)="addUserClick()">Add User</button> -->
+<!-- 
+<app-server></app-server>
+<app-server></app-server> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn btn-primary" id="detailsBtn" (click)="toggleDetails()">Toggle Details</button>
+            <p *ngIf="isDetailsVisible">This is server details placeholder</p>
+            <p *ngFor="let timeStamp of timeStampArray; let i = index" [ngStyle]="{backgroundColor: i >= 5 ? 'blue': null}" [ngClass]="{'text-white': i >= 5}">{{timeStamp}}</p>
+        </div>
+    </div>
+</div>

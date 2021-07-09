@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <div class="d-flex align-items-center justify-content-start">
+    <a routerLink="/" class="me-2">Home</a>
+    <a [routerLink]="['/user', 1]" class="me-2"> User 1</a>
+    <a [routerLink]="['/user', 2]"> User 2</a>
+  </div>
+  <hr>
+  <p *ngIf="isActivated">Activated</p>
+  <router-outlet></router-outlet>
+</div>

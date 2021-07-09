@@ -1,0 +1,11 @@
+<div class="mb-3">
+<label for="account_name" class="mt-2">Account Name</label>
+<input type="text" id="account_name" class="form-control" [(ngModel)]="account.name" (change)="validateAccount()">
+<label for="account_type" class="mt-2">Account Status</label>
+<select class="form-select" aria-label="Select the account status" [(ngModel)]="account.status" (change)="validateAccount()">
+    <option value="active" selected>Active</option>
+    <option value="inactive">Inactive</option>
+    <option value="unknown">Unknown</option>
+  </select>
+  <button class="btn btn-primary mt-3" (click)="addAccount()" [disabled]="!isValidAccount">Add Account</button>
+</div>

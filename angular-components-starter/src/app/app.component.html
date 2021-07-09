@@ -1,0 +1,17 @@
+<!-- <div class="container">
+<app-cockpit (serverEvent)="onServerAdded($event)"></app-cockpit>
+<app-server *ngFor="let server of servers" [serverName]='server'>
+    <p class="card-text" [ngClass]="{'server': server.type=='server', 'server-blueprint': server.type=='blueprint'}"> 
+        {{server.content}}
+      </p>
+</app-server>
+</div> -->
+
+<app-game-control (startGameEvent)="addTime($event)"></app-game-control>
+<div class="container-fluid" *ngFor="let second of timeArray">
+  <app-odd [currentSeconds]="second" *ngIf="second%2!=0; else even;" [ngStyle]="{'color': 'blue'}"></app-odd>
+<ng-template #even>
+  <app-even [currentSeconds]="second" [ngClass]="{'redtext': true}"></app-even>
+</ng-template>
+</div>
+

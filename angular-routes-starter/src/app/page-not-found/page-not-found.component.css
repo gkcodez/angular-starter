@@ -1,0 +1,25 @@
+.button {
+  font-weight: 300;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding:  1em;
+  border-radius: 10px;
+  float: left;
+  margin: 0 0 0 -155px;
+  left: 50%;
+  position: relative;
+  background-color: #007aff;
+  color: #fff;
+}
+
+p {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+}
+
+h1 {
+  text-align: center;
+  font-size: 15em;
+  font-weight: 100;
+}

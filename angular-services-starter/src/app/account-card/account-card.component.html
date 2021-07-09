@@ -1,0 +1,12 @@
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{account.name}}</h5>
+            <p class="card-text">This account is {{account.status}}</p>
+            <div class="d-flex align-items-center justify-content-start">
+                <button href="#" class="btn btn-success me-2" (click)="changeStatus('active')">Set to 'active'</button>
+                <button href="#" class="btn btn-info me-2" (click)="changeStatus('inactive')">Set to 'inactive'</button>
+                <button href="#" class="btn btn-secondary me-2" (click)="changeStatus('unknown')">Set to 'unknown'</button>
+                <button href="#" class="btn btn-danger" (click)="deleteAccount()">Delete Account</button>
+            </div>
+        </div>
+    </div>

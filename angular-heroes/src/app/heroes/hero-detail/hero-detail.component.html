@@ -1,0 +1,8 @@
+<div id="heroDetails" *ngIf='hero'>
+    <button id="saveBtn" class='btn btn-primary' (click)='save()'>save</button>
+    <button id="backBtn" class='btn btn-primary' (click)='goBack()'>back</button>
+    <h3 id="heroTitle">Selected Hero: {{hero.name}}</h3>
+    <p id="heroId">Hero ID: {{hero.id}}</p>
+    <p id="heroName">Hero Name: {{hero.name}}</p>
+    <input type="text" id="editName" class='input' [(ngModel)]='hero.name'>
+</div>

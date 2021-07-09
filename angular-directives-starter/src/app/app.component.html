@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="isOdd = !isOdd">Toggle Numbers</button>
+      <br><br>
+      <ul class="list-group">
+        <div *ngIf="isOdd">
+        <li class="list-group-item" *ngFor="let number of odd_numbers"
+        [ngClass]="{odd: 'number % 2 !== 0'}"
+        [ngStyle]="{'background-color': 'yellow'}">
+          <p> {{number}}</p>
+        </li>
+      </div>
+      <div *appUnless="isOdd">
+        <li class="list-group-item" *ngFor="let number of even_numbers"
+        [ngClass]="{even: 'number % 2 !== 0'}">
+          <p> {{number}}</p>
+        </li>
+      </div>
+      </ul>
+      <br>
+      <p appBasicHighlight>Style me with basic highlight</p>
+      <p appBetterHighlight [defaultColor]="'blue'" [highlightColor]="'red'">Style me with better highlight</p>
+    </div>
+  </div>
+</div>

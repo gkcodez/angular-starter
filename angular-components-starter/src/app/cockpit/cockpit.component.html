@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-12 mt-4">
+      <p class="text-primary">Add new servers or blueprints</p>
+      <label for="serverName">Server Name</label>
+      <input type="text" class="form-control" id="serverName" #serverNameElement>
+      <label for="serverContent">Server
+        Content</label>
+      <input type="text" class="form-control" id="serverContent" #serverContentElement>
+    </div>
+    <div class="col-sm-4 mt-3 d-flex justify-content-start">
+      <button class="btn btn-primary m-1" (click)="addServer(serverNameElement)">Add Server</button>
+      <button class="btn btn-primary m-1" (click)="addServerBlueprint(serverNameElement)">Add Server Blueprint</button>
+    </div>
+  </div>

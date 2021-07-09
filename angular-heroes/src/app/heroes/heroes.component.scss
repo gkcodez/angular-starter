@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    background-color: rgb(93, 179, 201);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.selected {
+    background-color: #369;
+    color: white;
+}

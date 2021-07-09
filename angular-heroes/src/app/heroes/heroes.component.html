@@ -1,0 +1,21 @@
+<div id="heroes">
+    <h3>My Heroes</h3>
+    <div id="addHero">
+        <input type="text" class='input' #heroName>
+        <button id='addHeroBtn' class='btn btn-primary' (click)="addHero(heroName.value); heroName.value=''">add
+            hero</button>
+    </div>
+    <div id="heroList">
+        <ul>
+            <li *ngFor='let hero of heroes'>
+                <a routerLink="../detail/{{hero.id}}">
+                    {{hero.id}}:
+                    {{hero.name | uppercase}}
+                </a>
+                <button class="btn btn-danger" (click)='deleteHero(hero)'>X</button>
+            </li>
+        </ul>
+    </div>
+    <div id="heroDetail">
+    </div>
+</div>

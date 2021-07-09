@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.server{
+    color: red;
+    font-weight: bold;
+}
+
+.server-blueprint {
+    color: blue;
+    font-style: italic;
+}

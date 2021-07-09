@@ -1,0 +1,28 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-12">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" 
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" 
+          routerLink="/servers"
+          routerLinkActive="active">Servers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" 
+          routerLink="/users"
+          routerLinkActive="active">Users</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mt-3">
+      <router-outlet></router-outlet>
+  </div>
+</div>
